@@ -10,7 +10,7 @@ module.exports = {
     const params = qs.parse(route.query)
   
     res.writeHead(200, {'Content-Type': 'text/plain'});
-  
+  // ex :http://localhost:8080/hello?name=Romain
     if (path === '/hello' && 'name' in params && params['name']=='Romain') {
       res.write('Hello my name is Romain and rigth im not sure to understand properly waht im doing lol')
     } else {
